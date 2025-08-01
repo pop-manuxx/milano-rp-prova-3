@@ -1,0 +1,117 @@
+/* RESET DI BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SFONDO SU TUTTA LA PAGINA */
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1e0010 0%, #0a0015 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #eee;
+  padding: 20px;
+}
+
+/* STRUTTURA DEL BODY */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #99001a;
+  padding-bottom: 20px;
+  color: #ff6685;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #ffc9d6;
+  margin-top: 10px;
+}
+
+/* CONTENUTO CENTRALE */
+main.home {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: rgba(255, 240, 245, 0.08);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 0, 50, 0.15);
+  backdrop-filter: blur(6px);
+  flex: 1 0 auto;
+}
+
+/* TITOLI SEZIONI */
+main.home h2 {
+  color: #ff6685;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #cc0040;
+  padding-bottom: 8px;
+}
+
+/* TESTO E PARAGRAFI */
+main.home p,
+main.home ul {
+  color: #e2e2e2;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+main.home ul {
+  margin-left: 25px;
+  list-style-type: disc;
+}
+
+main.home ul li {
+  padding: 6px 0;
+}
+
+/* BOTTONE */
+.button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 26px;
+  background-color: #cc0040;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(204, 0, 64, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #99001a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(153, 0, 26, 0.6);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid #99001a;
+  color: #ddc;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}

@@ -1,0 +1,237 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #ffffff;
+
+  background-color: #0a0a0a;
+  background-image: 
+    radial-gradient(circle at center, #1a0000 0%, #0a0a0a 90%),
+    repeating-linear-gradient(45deg, rgba(255, 0, 0, 0.02) 0px, rgba(255, 0, 0, 0.02) 2px, transparent 2px, transparent 6px),
+    radial-gradient(circle at top right, rgba(255, 0, 0, 0.05), transparent 70%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.03), transparent 60%);
+  background-size: cover, 100px 100px, 400px 400px, 600px 600px;
+  background-blend-mode: screen, overlay, lighten, normal;
+  animation: pulsePattern 12s ease-in-out infinite;
+}
+
+@keyframes pulsePattern {
+  0%, 100% {
+    background-position: center, 0 0, top right, bottom left;
+  }
+  50% {
+    background-position: center, 10px 10px, 48% 52%, 52% 48%;
+  }
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #1a0000;
+  border-bottom: 2px solid #ff0000;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.6);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+p {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+/* CARD CONTAINER */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #111111;
+  border: 2px solid #ff0000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #220000;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #ff0000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #1a0000;
+  padding: 15px;
+  border-top: 2px solid #ff0000;
+  color: #ddd;
+}
+
+/* SEZIONI DISCORD E TIKTOK UNIFICATE */
+.tiktok-section,
+.chat-discord-section {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 50px;
+  background-color: rgba(255, 0, 0, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.tiktok-section h2,
+.chat-discord-section h2 {
+  color: #ff0000;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.tiktok-section p,
+.chat-discord-section p {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+/* BOTTONI UNIFICATI */
+.discord-link,
+.join-link,
+.tiktok-link {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.discord-link:hover,
+.join-link:hover,
+.tiktok-link:hover {
+  background-color: #cc0000;
+  box-shadow: 0 6px 16px rgba(204, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+
+/* JOIN SERVER */
+.join-server {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px 20px;
+  background-color: rgba(255, 0, 0, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.join-server h2 {
+  color: #ff0000;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.join-server p {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.join-code {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+/* VIDEO */
+.video-section {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.video-section h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.video-player {
+  width: 90%;
+  max-width: 720px;
+  border-radius: 12px;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* FAQ SECTION */
+.faq-dark {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgba(255, 0, 0, 0.025);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.faq-dark h2 {
+  font-size: 1.8em;
+  color: #ff0000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 1em;
+  color: #dddddd;
+  line-height: 1.5;
+}
+
+/* TRASPARENZA SEZIONI */
+main,
+section,
+footer {
+  background-color: transparent !important;
+}
